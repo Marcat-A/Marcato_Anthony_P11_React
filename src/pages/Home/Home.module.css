@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 223px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/cover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  margin-bottom: 2.5rem;
+}
+
+.mainTitle {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 500;
+}

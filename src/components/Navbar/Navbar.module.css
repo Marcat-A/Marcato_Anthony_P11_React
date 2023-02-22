@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.brand > img {
+  height: 68px;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  display: flex;
+  margin-left: 3.5rem;
+}
+
+.link > a {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.link > a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 375px) {
+  .link {
+    margin-left: 10px;
+  }
+  .link > a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .brand > img {
+    height: 47px;
+  }
+}
