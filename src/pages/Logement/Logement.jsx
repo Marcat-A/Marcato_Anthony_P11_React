@@ -5,6 +5,7 @@ import Slider from "../../components/Slider/Slider";
 import css from "./Logement.module.css";
 import greyStar from "../../assets/greyStar.svg";
 import coloredStar from "../../assets/coloredStar.svg";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 const Logement = () => {
   const { id } = useParams();
@@ -14,27 +15,32 @@ const Logement = () => {
   const coloredStars = [];
   const greyStars = [];
   for (let i = 0; i < logement.rating; i++) {
-    coloredStars.push(<img src={coloredStar} alt="/" />);
+    coloredStars.push(<img src={coloredStar} alt="/" key={i} />);
   }
   for (let i = logement.rating; i < 5; i++) {
-    greyStars.push(<img src={greyStar} alt="/" />);
+    greyStars.push(<img src={greyStar} alt="/" key={i} />);
   }
+  const equips = logement.equipments.map((equipement) => equipement);
   return (
     <main className={css.hero}>
-      <div className={css.carrousel}>
+      <section className={css.carrousel}>
         {logement.pictures.length > 1 ? (
           <Slider images={logement.pictures} />
         ) : (
           <img src={logement.pictures[0]} alt="Chambre" />
         )}
-      </div>
-      <div className={css.header}>
+      </section>
+      <section className={css.header}>
         <div className={css.leftHeader}>
           <h2 className={css.title}>{logement.title}</h2>
           <h3 className={css.secondTitle}>{logement.location}</h3>
           <div className={css.tags}>
-            {logement.tags.map((tag) => {
-              return <span className={css.tag}>{tag}</span>;
+            {logement.tags.map((tag, i) => {
+              return (
+                <span className={css.tag} key={i}>
+                  {tag}
+                </span>
+              );
             })}
           </div>
         </div>
@@ -53,7 +59,11 @@ const Logement = () => {
             {greyStars}
           </div>
         </div>
-      </div>
+      </section>
+      <section className={css.dropdowns}>
+        <Dropdown title="Description" desc={[logement.description]} />
+        <Dropdown title="Équipements" desc={equips} />
+      </section>
     </main>
   );
 };

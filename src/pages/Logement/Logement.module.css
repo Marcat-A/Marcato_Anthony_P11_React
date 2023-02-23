@@ -93,3 +93,66 @@
   margin-top: 1rem;
   gap: 0.2rem;
 }
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .dropdowns {
+    flex-direction: column;
+    gap: 0;
+  }
+  .carrousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 255px;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .leftHeader,
+  .rightHeader {
+    width: 100%;
+  }
+
+  .rightHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .secondTitle {
+    font-size: 14px;
+  }
+  .tag {
+    font-size: 10px;
+    min-width: 84px;
+  }
+
+  .picture {
+    width: 32px;
+    height: 32px;
+  }
+
+  .names {
+    font-size: 12px;
+  }
+
+  .ratings > img {
+    width: 15px;
+    height: 15px;
+  }
+}

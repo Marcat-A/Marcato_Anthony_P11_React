@@ -17,7 +17,6 @@ const Slider = ({ images }) => {
   };
   const prevImg = () => {
     if (imgNum === 1) {
-      console.log(imgNum, images);
       setImgNum(images.length);
     } else {
       setImgNum(imgNum - 1);
