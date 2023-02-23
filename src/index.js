@@ -9,12 +9,12 @@ import Footer from "./components/Footer/Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className={css.container}>
-      <Router>
+    <Router>
+      <div className={css.container}>
         <Navbar />
         <App />
-        <Footer />
-      </Router>
-    </div>
+      </div>
+      <Footer />
+    </Router>
   </React.StrictMode>
 );
