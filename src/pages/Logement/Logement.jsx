@@ -21,6 +21,7 @@ const Logement = () => {
     greyStars.push(<img src={greyStar} alt="/" key={i} />);
   }
   const equips = logement.equipments.map((equipement) => equipement);
+  console.log(logement.description);
   return (
     <main className={css.hero}>
       <section className={css.carrousel}>
