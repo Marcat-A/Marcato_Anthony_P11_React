@@ -2,7 +2,6 @@ import React from "react";
 import css from "./Card.module.css";
 
 const Card = ({ logement }) => {
-  console.log(logement);
   return (
     <div
       className={css.container}

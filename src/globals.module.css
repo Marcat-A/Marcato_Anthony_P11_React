@@ -26,6 +26,12 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
 @media screen and (max-width: 375px) {
   .container {
     padding-inline: 1.25rem;
