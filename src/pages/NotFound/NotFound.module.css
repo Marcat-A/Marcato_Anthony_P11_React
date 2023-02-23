@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 198px);
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-color);
+}
+.title {
+  font-size: 288px;
+  font-weight: 700;
+}
+
+.secondTitle {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15vh;
+}
+
+.link {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
+}
