@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: flex-start;
   color: var(--primary-color);
+  padding-inline: 10vw;
 }
 .title {
   font-size: 288px;
@@ -15,6 +16,7 @@
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 15vh;
+  text-align: center;
 }
 
 .link {
@@ -22,4 +24,17 @@
   font-weight: 500;
   font-size: 18px;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    margin-top: 10vh;
+    font-size: 96px;
+  }
+  .secondTitle {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 14px;
+  }
 }
