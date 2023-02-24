@@ -25,11 +25,7 @@ const Logement = () => {
   return (
     <main className={css.hero}>
       <section className={css.carrousel}>
-        {logement.pictures.length > 1 ? (
-          <Slider images={logement.pictures} />
-        ) : (
-          <img src={logement.pictures[0]} alt="Chambre" />
-        )}
+        <Slider images={logement.pictures} />
       </section>
       <section className={css.header}>
         <div className={css.leftHeader}>

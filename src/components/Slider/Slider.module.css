@@ -22,7 +22,25 @@
   left: 1rem;
 }
 
+.nume {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 375px) {
+  .nume {
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
   .arrow {
     width: 12px;
     height: 20px;

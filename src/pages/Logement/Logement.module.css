@@ -104,7 +104,7 @@
 @media screen and (max-width: 375px) {
   .dropdowns {
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
   .carrousel {
     display: flex;
